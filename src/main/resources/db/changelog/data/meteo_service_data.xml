@@ -7,13 +7,13 @@
                       
 	<changeSet id="meteo.service.table.data.owm" author="Alekseev Vitaly">
 		<sql>
-INSERT INTO METEO_SERVICE (ID, LABEL, NAME, CREATE_DATE, DELETE_DATE) VALUES (SQ_METEO_SERVICE.NEXTVAL, 'Open Weather Map', 'OWM', SYSDATE, NULL);
+INSERT INTO METEO_SERVICE (ID, LABEL, NAME, CREATE_DATE, DELETE_DATE) VALUES (nextval('sq_meteo_service'), 'Open Weather Map', 'OWM', CURRENT_DATE, NULL);
     	</sql>
 	</changeSet>
 	
 	<changeSet id="meteo.service.table.data.met.norway" author="Alekseev Vitaly">
 		<sql>
-INSERT INTO METEO_SERVICE (ID, LABEL, NAME, CREATE_DATE, DELETE_DATE) VALUES (SQ_METEO_SERVICE.NEXTVAL, 'Forecast IO', 'FCAST', SYSDATE, NULL);
+INSERT INTO METEO_SERVICE (ID, LABEL, NAME, CREATE_DATE, DELETE_DATE) VALUES (nextval('sq_meteo_service'), 'Forecast IO', 'FCAST', CURRENT_DATE, NULL);
     	</sql>
 	</changeSet>
 	
